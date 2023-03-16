@@ -23,11 +23,9 @@ document.getElementById('dob').innerHTML= "Fecha de nacimiento: "+obj.results.do
 
 document.getElementById('ciudad').innerHTML = obj.results.location.city +", "+obj.results.location.state+", " +obj.results.location.country+ ". "
 
-// document.getElementById("foto").innerHTML = '<img src= "obj.results.picture.large">'; //este no me funciona lo hice directo en el html
 
 document.getElementById("perfil_prof").innerText= perfil_prof
 
-//document.addEventListener("click", myFunction);
 
 function mostrarvalor() {
   document.getElementById("celu").innerHTML = obj.results.cell;

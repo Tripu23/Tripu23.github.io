@@ -29,10 +29,30 @@ document.getElementById("perfil_prof").innerText= perfil_prof
 
 function mostrarvalor() {
   document.getElementById("celu").innerHTML = obj.results.cell;
-  document.getElementById("mail").innerHTML = obj.results.email;
-  document.getElementById("linkedin").innerHTML = "www.linkedin.com";
   
 }
+
+function mostrarvalor2() {
+document.getElementById("mail").innerHTML = obj.results.email;
+
+}
+
+// Función para mostrar u ocultar el link de LinkedIn
+function mostrarvalor3() {
+  var link = document.getElementById("linkedin");
+  if (link.innerHTML === "Linkedin") {
+    link.innerHTML = "www.linkedin.com";
+  } else {
+    link.innerHTML = "Linkedin";
+  }
+}
+
+// Función para abrir el link en una nueva pestaña
+document.getElementById("linkedin").addEventListener("click", function(event) {
+  event.preventDefault();
+  var url = "https://www.linkedin.com";
+  window.open(url, '_blank');
+});
 
 const Expe = 'Fotografía'
 const periodo = "2016 - Actualidad"
